@@ -34,10 +34,13 @@ docs/         Final IEEE paper (added on submission)
    cd FAST_LIO && git submodule update --init
    ```
 
-3. **Clone this repo** and copy our modified config/launch files over:
+3. **Clone this repo** and copy our modified config/launch files over.
+
+   > **Note:** `launch/mapping_kaist01.launch` loads its parameters from `config/ouster64.yaml` (the standard FAST-LIO2 config filename), not `config/kaist01.yaml`. Our modified config must therefore be copied in **under that exact filename**, overwriting the stock file — otherwise FAST-LIO2 will silently run with the unmodified default settings instead of our KAIST01-specific configuration (in particular `extrinsic_est_en: true`).
+
    ```bash
    git clone https://github.com/Hannan7-5/fast-lio2-mulran-kaist01.git
-   cp fast-lio2-mulran-kaist01/config/kaist01.yaml ~/catkin_ws/src/FAST_LIO/config/
+   cp fast-lio2-mulran-kaist01/config/kaist01.yaml ~/catkin_ws/src/FAST_LIO/config/ouster64.yaml
    cp fast-lio2-mulran-kaist01/launch/mapping_kaist01.launch ~/catkin_ws/src/FAST_LIO/launch/
    ```
 
