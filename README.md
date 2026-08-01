@@ -1,5 +1,7 @@
 # FAST-LIO2 Reproduction on MulRan KAIST01
 
+![FAST-LIO2 Banner](assets/Banner.png)
+
 Reproduction and extension of **FAST-LIO2** (Xu et al., 2022) on the **MulRan KAIST01** sequence, done as a Mobile Robotics semester project. This repo contains our modified configuration, data-processing/evaluation scripts, and results. It is built on top of the official [FAST-LIO2 repository](https://github.com/hku-mars/FAST_LIO) — see setup instructions below.
 
 ## Original Paper
