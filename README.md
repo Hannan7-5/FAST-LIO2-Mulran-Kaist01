@@ -15,14 +15,14 @@ Raw sequence files + demo video for this project: [Google Drive](https://drive.g
 
 ## Repository Structure
 ```
+Docs/         Final IEEE paper
+assets/       Files for README.md
 config/       Modified FAST-LIO2 config for the Ouster sensor on KAIST01
 launch/       ROS launch file for running FAST-LIO2 on KAIST01
-scripts/      Data conversion, dropout-robustness bag generation, trajectory extraction, ATE evaluation, plotting
 results/
   trajectories/     Estimated and ground-truth trajectories (TUM format)
-  ate_evaluation/   evo ATE results (clean run + 10/30/50/70% LiDAR dropout robustness tests)
   figures/          Dropout robustness plots
-docs/         Final IEEE paper (added on submission)
+scripts/      Data conversion, dropout-robustness bag generation, trajectory extraction, ATE evaluation, plotting
 ```
 
 ## Installation
