@@ -78,7 +78,7 @@ rosbag play ~/mulran_ws/KAIST01.bag
 python3 scripts/extract_traj_v6.py      # extracts estimated trajectory in TUM format
 python3 scripts/compute_ate_v2.py       # aligns with ground truth, writes TUM files for evo
 ```
-Then run `evo` (https://github.com/MichaelGrupp/evo) on the resulting ground-truth/estimate TUM files for ATE metrics, or use:
+Trajectory outputs are written to `results/trajectories/`. Then run `evo` (https://github.com/MichaelGrupp/evo) on the resulting ground-truth/estimate TUM files for ATE metrics, or use:
 ```bash
 python3 scripts/plot_evo_results.py
 ```
@@ -89,7 +89,7 @@ To test robustness under degraded sensing, we simulate LiDAR point dropout (10/3
 ```bash
 python3 scripts/make_dropout_bag.py
 ```
-Results per dropout level are in `results/ate_evaluation/dropout{10,30,50,70}/`, with summary plots in `results/figures/`.
+Summary plots for each dropout level are in `results/figures/`.
 
 ## Configuration Changes from Stock FAST-LIO2
 
