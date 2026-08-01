@@ -90,13 +90,10 @@ Results per dropout level are in `results/ate_evaluation/dropout{10,30,50,70}/`,
 
 We enabled online IMU-LiDAR extrinsic estimation (`extrinsic_est_en: true`) rather than using stock fixed extrinsics, since precise IMU-LiDAR calibration for the KAIST01 rig was not directly available to us.
 
-## Known Limitations
-
-The current ATE evaluation shows a large error magnitude relative to expectations, likely due to a scale/alignment issue in the trajectory-to-ground-truth registration that we are still refining. Numbers in `results/ate_evaluation/` should be treated as preliminary pending further validation. This is documented as an open item in the accompanying paper.
 
 ## Video Link
 
-See the [Google Drive folder](https://drive.google.com/drive/u/2/folders/1LsI10ViQvEp_rg95Bd9y8yeNyG7NBVK3) for the recorded demonstration (pipeline walkthrough, execution, and results).
+See the [Google Drive folder](https://drive.google.com/drive/u/2/folders/1LsI10ViQvEp_rg95Bd9y8yeNyG7NBVK3) for the recorded results.
 
 ## Authors
 
