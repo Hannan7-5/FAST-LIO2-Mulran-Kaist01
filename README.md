@@ -94,7 +94,7 @@ We enabled online IMU-LiDAR extrinsic estimation (`extrinsic_est_en: true`) rath
 
 The current ATE evaluation shows a large error magnitude relative to expectations, likely due to a scale/alignment issue in the trajectory-to-ground-truth registration that we are still refining. Numbers in `results/ate_evaluation/` should be treated as preliminary pending further validation. This is documented as an open item in the accompanying paper.
 
-## Demo Video
+## Video Link
 
 See the [Google Drive folder](https://drive.google.com/drive/u/2/folders/1LsI10ViQvEp_rg95Bd9y8yeNyG7NBVK3) for the recorded demonstration (pipeline walkthrough, execution, and results).
 
